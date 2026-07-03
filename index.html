@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat • mfkh • 2 Mode</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Header with Mode Toggle -->
+        <header>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <h1>🤖 mfkh-Chat</h1>
+                <span class="badge" id="modeBadge">NORMAL</span>
+            </div>
+            <div class="toggle-container">
+                <span class="toggle-label" id="labelNormal">Normal</span>
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle" />
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label" id="labelWorm">Worm 🐛</span>
+            </div>
+        </header>
+
+        <!-- Settings -->
+        <div id="settings">
+            <div class="input-group">
+                <label>🔑 API Key</label>
+                <input type="password" id="apiKey" placeholder="sk-..." />
+                <button id="saveKeyBtn">Simpan</button>
+            </div>
+            <div class="input-group" style="flex:2;">
+                <label>🧠 System Prompt (opsional)</label>
+                <input type="text" id="sysPrompt" placeholder="Custom prompt..." />
+            </div>
+            <button id="clearChatBtn" class="danger">🗑️ Clear</button>
+        </div>
+
+        <!-- Chat Box -->
+        <div id="chatBox"></div>
+
+        <!-- Input -->
+        <div id="inputArea">
+            <textarea id="promptInput" rows="2" placeholder="Ketik pesan..."></textarea>
+            <button id="sendBtn">🚀 Kirim</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
