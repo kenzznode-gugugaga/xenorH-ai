@@ -8,7 +8,6 @@
 </head>
 <body>
     <div id="app">
-        <!-- Header with Mode Toggle -->
         <header>
             <div style="display:flex;align-items:center;gap:12px;">
                 <h1>🤖 mfkh-Chat</h1>
@@ -24,16 +23,12 @@
             </div>
         </header>
 
-        <!-- Settings -->
+        <!-- Settings: Hanya API Key -->
         <div id="settings">
-            <div class="input-group">
+            <div class="input-group" style="flex:2;">
                 <label>🔑 API Key</label>
                 <input type="password" id="apiKey" placeholder="sk-..." />
                 <button id="saveKeyBtn">Simpan</button>
-            </div>
-            <div class="input-group" style="flex:2;">
-                <label>🧠 System Prompt (opsional)</label>
-                <input type="text" id="sysPrompt" placeholder="Custom prompt..." />
             </div>
             <button id="clearChatBtn" class="danger">🗑️ Clear</button>
         </div>
