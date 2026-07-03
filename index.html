@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Chat • mfkh • 2 Mode</title>
+    <title>AI Chat • Gemini • mfkh</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="app">
         <header>
             <div style="display:flex;align-items:center;gap:12px;">
-                <h1>🤖 mfkh-Chat</h1>
+                <h1>🤖 mfkh-Gemini</h1>
                 <span class="badge" id="modeBadge">NORMAL</span>
             </div>
             <div class="toggle-container">
-                <span class="toggle-label" id="labelNormal">Normal</span>
+                <span class="toggle-label">Normal</span>
                 <label class="switch">
                     <input type="checkbox" id="modeToggle" />
                     <span class="slider"></span>
                 </label>
-                <span class="toggle-label" id="labelWorm">Worm 🐛</span>
+                <span class="toggle-label">Worm 🐛</span>
             </div>
         </header>
 
-        <!-- Settings: Hanya API Key -->
         <div id="settings">
             <div class="input-group" style="flex:2;">
-                <label>🔑 API Key</label>
-                <input type="password" id="apiKey" placeholder="sk-..." />
+                <label>🔑 Gemini API Key</label>
+                <input type="password" id="apiKey" placeholder="AIzaSy..." />
                 <button id="saveKeyBtn">Simpan</button>
             </div>
             <button id="clearChatBtn" class="danger">🗑️ Clear</button>
         </div>
 
-        <!-- Chat Box -->
         <div id="chatBox"></div>
 
-        <!-- Input -->
         <div id="inputArea">
             <textarea id="promptInput" rows="2" placeholder="Ketik pesan..."></textarea>
             <button id="sendBtn">🚀 Kirim</button>
         </div>
     </div>
+    <script src="script.js"></script>
+</body>
+</html>
     <script src="script.js"></script>
 </body>
 </html>
